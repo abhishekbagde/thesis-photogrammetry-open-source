@@ -56,6 +56,20 @@ assets/
 
 - `assets/comparison_images/*`
 
+## Visual Comparison
+
+### Wesley
+
+| COLMAP | NeRO | NeuS |
+|---|---|---|
+| ![Wesley COLMAP](assets/comparison_images/wesley_colmap.png) | ![Wesley NeRO](assets/comparison_images/wesley_nero.png) | ![Wesley NeuS](assets/comparison_images/wesley_neus.png) |
+
+### Cuneiform
+
+| COLMAP | NeRO | NeuS |
+|---|---|---|
+| ![Cuneiform COLMAP](assets/comparison_images/cuneiform_colmap.png) | ![Cuneiform NeRO](assets/comparison_images/cuneiform_nero.png) | ![Cuneiform NeuS](assets/comparison_images/cuneiform_neus.png) |
+
 ## Notes on Reproducibility
 
 - The scripts were developed in a research environment and some contain dataset-specific absolute paths that should be updated before reuse.
@@ -73,4 +87,3 @@ assets/
 
 This repository contains custom project code/configuration plus references to external frameworks.
 Please respect and retain upstream licenses when reproducing full pipelines.
-
