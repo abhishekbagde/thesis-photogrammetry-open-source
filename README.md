@@ -58,17 +58,50 @@ assets/
 
 ## Visual Comparison
 
+Methods shown below include:
+`Agisoft Metashape`, `COLMAP`, `NeRF`, `NeRO`, `NeuS`, and `VisualSFM`.
+
 ### Wesley
 
-| COLMAP | NeRO | NeuS |
+| Agisoft Metashape | COLMAP | NeRF |
 |---|---|---|
-| ![Wesley COLMAP](assets/comparison_images/wesley_colmap.png) | ![Wesley NeRO](assets/comparison_images/wesley_nero.png) | ![Wesley NeuS](assets/comparison_images/wesley_neus.png) |
+| ![Wesley Agisoft](assets/comparison_images/wesley_agisoft_metashape.png) | ![Wesley COLMAP](assets/comparison_images/wesley_colmap.png) | ![Wesley NeRF](assets/comparison_images/wesley_nerf.png) |
+
+| NeRO | NeuS | VisualSFM |
+|---|---|---|
+| ![Wesley NeRO](assets/comparison_images/wesley_nero.png) | ![Wesley NeuS](assets/comparison_images/wesley_neus.png) | ![Wesley VisualSFM](assets/comparison_images/wesley_visualsfm.png) |
 
 ### Cuneiform
 
-| COLMAP | NeRO | NeuS |
+| Agisoft Metashape | COLMAP | NeRF |
 |---|---|---|
-| ![Cuneiform COLMAP](assets/comparison_images/cuneiform_colmap.png) | ![Cuneiform NeRO](assets/comparison_images/cuneiform_nero.png) | ![Cuneiform NeuS](assets/comparison_images/cuneiform_neus.png) |
+| ![Cuneiform Agisoft](assets/comparison_images/cuneiform_agisoft_metashape.png) | ![Cuneiform COLMAP](assets/comparison_images/cuneiform_colmap.png) | ![Cuneiform NeRF](assets/comparison_images/cuneiform_nerf.png) |
+
+| NeRO | NeuS | VisualSFM |
+|---|---|---|
+| ![Cuneiform NeRO](assets/comparison_images/cuneiform_nero.png) | ![Cuneiform NeuS](assets/comparison_images/cuneiform_neus.png) | ![Cuneiform VisualSFM](assets/comparison_images/cuneiform_visualsfm.png) |
+
+### Cuneiform930
+
+| Agisoft Metashape | COLMAP | NeRF |
+|---|---|---|
+| ![Cuneiform930 Agisoft](assets/comparison_images/cuneiform930_agisoft_metashape.png) | ![Cuneiform930 COLMAP](assets/comparison_images/cuneiform930_colmap.png) | ![Cuneiform930 NeRF](assets/comparison_images/cuneiform930_nerf.png) |
+
+| NeRO | NeuS | VisualSFM |
+|---|---|---|
+| ![Cuneiform930 NeRO](assets/comparison_images/cuneiform930_nero.png) | ![Cuneiform930 NeuS](assets/comparison_images/cuneiform930_neus.png) | ![Cuneiform930 VisualSFM](assets/comparison_images/cuneiform930_visualsfm.png) |
+
+### Gaster Amulet 49D
+
+| Agisoft Metashape | COLMAP | NeRF |
+|---|---|---|
+| ![Gaster49D Agisoft](assets/comparison_images/gasteramulet49d_agisoft_metashape.png) | ![Gaster49D COLMAP](assets/comparison_images/gasteramulet49d_colmap.png) | ![Gaster49D NeRF](assets/comparison_images/gasteramulet49d_nerf.png) |
+
+| NeRO | NeuS | VisualSFM |
+|---|---|---|
+| ![Gaster49D NeRO](assets/comparison_images/gasteramulet49d_nero.png) | ![Gaster49D NeuS](assets/comparison_images/gasteramulet49d_neus.png) | ![Gaster49D VisualSFM](assets/comparison_images/gasteramulet49d_visualsfm.png) |
+
+Note: `.ply` mesh outputs are present in the original thesis workspace but are not embedded in README since GitHub does not render `.ply` previews inline.
 
 ## Notes on Reproducibility
 
