@@ -116,6 +116,24 @@ Note: `.ply` mesh outputs are present in the original thesis workspace but are n
 - NeuS: https://github.com/Totoro97/NeuS
 - NeRF baseline reference: https://github.com/bmild/nerf
 
+## References
+
+- VisualSFM (software): http://ccwu.me/vsfm/
+- Wu, C. "VisualSFM: A Visual Structure from Motion System." (2011): http://ccwu.me/vsfm/doc.html
+- Agisoft Metashape (software): https://www.agisoft.com/
+- COLMAP:
+  - Repository: https://github.com/colmap/colmap
+  - Schonberger, J. L., and Frahm, J.-M. "Structure-from-Motion Revisited." CVPR 2016.
+- NeRF:
+  - Mildenhall, B., et al. "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis." ECCV 2020.
+  - Project page: https://www.matthewtancik.com/nerf
+- NeuS:
+  - Wang, P., et al. "NeuS: Learning Neural Implicit Surfaces by Volume Rendering for Multi-view Reconstruction." NeurIPS 2021.
+  - Repository: https://github.com/Totoro97/NeuS
+- NeRO:
+  - Liu, Y., et al. "NeRO: Neural Geometry and BRDF Reconstruction of Reflective Objects from Multiview Images." SIGGRAPH Asia 2023.
+  - Repository: https://github.com/liuyuan-pal/NeRO
+
 ## License and Attribution
 
 This repository contains custom project code/configuration plus references to external frameworks.
