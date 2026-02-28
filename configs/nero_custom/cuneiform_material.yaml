@@ -1,0 +1,50 @@
+name: cuneiform_material
+
+####network#####
+network: material
+database_name: custom/cuneiform_original/raw_2000
+mesh: data/meshes/cuneiform_shape-300000.ply
+
+scene_scale: 0.8
+grad_clip_norm: 1.0 #new
+debug: true
+reg_diffuse_light: true                 # neutral light regularization
+reg_diffuse_light_lambda: 0.2           # weights for this neutral light reg
+reg_mat: true                           # material smoothness regularization
+shader_cfg:
+  diffuse_sample_num: 512               # number of rays sampled in the diffuse lobe
+  specular_sample_num: 256              # number of rays sampled in the specular lobe
+  outer_light_version: sphere_direction # we add the sphere intersection point encoding in the direct light
+  light_exp_max: 3.0  #5.0                   # maximum radiance value of a single ray is exp(5.0)
+  inner_light_exp_max: 3.0  #5.0              # maximum radiance value of a single ray is exp(5.0)
+  human_lights: true                    # model the reflected lights of the photo capturer
+
+######loss######
+loss: ['nerf_render','mat_reg']
+val_metric: ['mat_render']
+key_metric_name: psnr
+
+####dataset#####
+train_dataset_type: dummy
+train_dataset_cfg:
+  database_name: custom/cuneiform_original/raw_2000
+val_set_list:
+  -
+    name: val
+    type: dummy
+    cfg:
+      database_name: custom/cuneiform_original/raw_2000
+
+####trainier####
+optimizer_type: adam
+lr_type: warm_up_cos
+lr_cfg:
+  end_warm: 1000
+  end_iter: 100000
+  lr: 1e-4  #new
+  lr_decay_rate: 0.5  # New: learning rate decay
+  lr_decay_steps: 20000  # New: decay steps
+total_step: 100000
+val_interval: 5000
+save_interval: 500
+train_log_step: 10

@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Generated artifacts
+logs/
+results/
+ckpts/
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.npy
+*.npz
+*.bin
+*.vol
+
+# Large meshes / binaries (keep only curated samples if needed)
+*.ply
+
